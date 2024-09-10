@@ -10,8 +10,8 @@
 
 **Whats next?**
   - **CSS**
-   Fix grids width and height, make everything fit.
-   Add functioning navbar (without search input working (for now)).
+    - Fix grids width and height, make everything fit.
+    - Add functioning navbar (without search input working (for now)).
   - **HTML**
-   Fill up the article elements with content
-   Add checkboxes, to apply "animation" to drop-bar, menu and sidebar.
+    - Fill up the article elements with content
+    - Add checkboxes, to apply "animation" to drop-bar, menu and sidebar.
