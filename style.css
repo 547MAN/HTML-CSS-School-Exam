@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-auto-rows: 3.5rem 50rem 15rem;
+  grid-template-areas:
+    "hd hd hd hd"
+    "mn mn mn sb"
+    "ft ft ft ft";
+}
+
+.header {
+  grid-area: hd;
+  background-color: brown;
+  color: rgb(255, 255, 255);
+}
+
+.video {
+  width: 400px;
+  height: 100px;
+  z-index: 2;
+}
+.sideMenu {
+  grid-area: sb;
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  grid-area: mn;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  grid-template-areas:
+    ". tp ."
+    "mf mf mf"
+    ". dp ."
+    ". sf .";
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.top-field {
+  grid-area: tp;
+  display: grid;
+  place-content: center;
+  background-color: rgb(4, 0, 255);
+}
+.mid-field {
+  grid-area: mf;
+  display: grid;
+  place-content: center;
+  background-color: black;
+}
+.dropDown {
+  grid-area: dp;
+  display: grid;
+  place-content: center;
+  background-color: rgb(211, 127, 0);
+}
+.study-info {
+  grid-area: sf;
+  display: grid;
+  place-content: center;
+  background-color: rgb(169, 0, 0);
+}
+
+.footer {
+  grid-area: ft;
+  background-color: aqua;
+  color: rgb(255, 255, 255);
+}
+
+.row-line {
+  display: inline-block;
+  border: 2px solid red;
+  width: 100%;
+}
+
+.mid-field td {
+  padding-left: 2rem;
+}
