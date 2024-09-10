@@ -9,9 +9,9 @@
 - Need to play more with dimensions.
 
 **Whats next?**
-  **CSS**
+ **CSS**
   - Fix grids width and height, make everything fit.
   - Add functioning navbar (without search input working (for now)).
-  **HTML**
+ **HTML**
   - Fill up the article elements with content
   - Add checkboxes, to apply "animation" to drop-bar, menu and sidebar.
