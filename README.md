@@ -1,3 +1,20 @@
+## 12.09.2024
+**HTML Structure and CSS**
+- Finished constructing the grid layout, works best on laptop at this moment.
+
+
+**Whats next?**
+  - **HTML**
+    - Fill up the article and other elements with content
+    - Add checkboxes, to apply "animation" to drop-bar, menu and sidebar.
+    - Make sidebar functional, meaning autoscroll should be added when clicked on <a>.
+  - **CSS**
+    - Center most of grid contents
+    - Make inside of grids appealing
+    - Animate sidebar, <a> inside sidebar should be highlighted when user is inside the parent element of <a>
+  
+
+
 ## 10.09.2024
 
 **HTML Structure**
