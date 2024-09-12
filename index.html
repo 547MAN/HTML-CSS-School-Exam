@@ -7,7 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header"><h1>Header</h1></header>
+    <header class="header">
+      <nav>
+        <div class="logo">LOGO</div>
+        <div class="search">SØK</div>
+        <div class="project-menu">EXAM MENU</div>
+        <div class="menu">MENU</div>
+      </nav>
+    </header>
     <aside class="sideMenu">
       <h2>Sidebar</h2>
       <ul>
@@ -23,19 +30,19 @@
     </aside>
     <main class="container">
       <article class="top-field">
-        <h2>Video/Intro</h2>
-        <iframe
-          class="video"
-          src="https://film.oslomet.no/v.ihtml/player.html?source=embed&amp;photo%5fid=95216483"
-          allow="autoplay; encrypted-media"
-          allowfullscreen=""
-          title="Tre studenter fra studiet forteller hvorfor de liker å studere dette. De snakker om at det er fint å være en nerd."
-          loading="lazy"
-          style="border: none"
-        ></iframe>
+        <div class="video">
+          <iframe
+            src="https://film.oslomet.no/v.ihtml/player.html?source=embed&amp;photo%5fid=95216483"
+            allow="autoplay; encrypted-media"
+            allowfullscreen=""
+            title="Tre studenter fra studiet forteller hvorfor de liker å studere dette. De snakker om at det er fint å være en nerd."
+            loading="lazy"
+          ></iframe>
+        </div>
       </article>
       <article class="mid-field">
-        <h2>Tables</h2>
+        <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
+        <h3>Bachelorprogram</h3>
         <table>
           <tr>
             <td><span class="row-line"></span></td>
@@ -89,31 +96,50 @@
             </td>
           </tr>
         </table>
+        <p>
+          Få innsikt i matematiske modeller og datadrevne metoder som kan løse
+          mange praktiske og samfunnsnyttige oppgaver.
+        </p>
       </article>
-      <article class="dropDown">
-        <h2>10-dropwdown-infos</h2>
-        <div class="drop-down-options">1</div>
-        <div class="drop-down-options">2</div>
-        <div class="drop-down-options">3</div>
-        <div class="drop-down-options">4</div>
-        <div class="drop-down-options">5</div>
-        <div class="drop-down-options">6</div>
-        <div class="drop-down-options">7</div>
-        <div class="drop-down-options">8</div>
-        <div class="drop-down-options">9</div>
-        <div class="drop-down-options">10</div>
+      <article class="click-me-container">
+        <!-- 1. row of columns -->
+        <div class="click-me-option left-top">Studiestart</div>
+        <div class="click-me-option mid-top">Opptakskrav og Poeng</div>
+        <div class="click-me-option right-top">Slik søker du</div>
+        <!-- 2. row of columns -->
+        <div class="click-me-option left-mid">Hva lærer du?</div>
+        <div class="click-me-option mid-mid">Studiets oppbygging</div>
+        <div class="click-me-option right-mid">
+          Hvordan foregår undervisning?
+        </div>
+        <!-- 3.row of columns -->
+        <div class="click-me-option left-bot">Hva koster det?</div>
+        <div class="click-me-option mid-bot">Hva kan du jobbe som?</div>
+        <div class="click-me-option right-bot">Utveksling</div>
+        <!-- 4.row of columns -->
+        <div class="click-me-option mid-jungel">
+          Videre studiemuligheter ved OsloMet
+        </div>
       </article>
       <article class="study-info">
-        <h2>studieSteder++</h2>
-        <div class="page-end">x</div>
-        <div class="page-end">y</div>
-        <div class="page-end">z</div>
+        <!-- 1.row of columns -->
+        <div class="page-end top-left">Faglig leder</div>
+        <div class="page-end top-right">Andre Studier</div>
+        <!-- 2.row of columns -->
+        <div class="page-end bot-left">Ledige studieplasser</div>
+        <div class="page-end bot-right">Student Historier</div>
       </article>
     </main>
     <footer class="footer">
-      <h2>adresse++</h2>
-      <div class="adresPart"></div>
-      <div class="links"></div>
+      <!-- 1.row of columns -->
+      <div class="subscribe">
+        Hold deg oppdatert på hva som skjer på OsloMet.
+      </div>
+      <!-- 2.row of columns -->
+      <div class="adresPart">
+        Oslo Metropolitan University - Storbyuniversitetet
+      </div>
+      <div class="links">links..............</div>
     </footer>
   </body>
 </html>

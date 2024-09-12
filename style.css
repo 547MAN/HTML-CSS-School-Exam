@@ -8,30 +8,58 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-auto-rows: 3.5rem 50rem 15rem;
+  grid-auto-rows: 3.5rem auto 25rem;
   grid-template-areas:
     "hd hd hd hd"
     "mn mn mn sb"
     "ft ft ft ft";
 }
 
-.header {
-  grid-area: hd;
-  background-color: brown;
-  color: rgb(255, 255, 255);
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.video {
-  width: 400px;
-  height: 100px;
-  z-index: 2;
+/* ============================================================================== */
+
+.header {
+  grid-area: hd;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
 }
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "lo se pm me";
+  height: 100%;
+}
+
+.logo {
+  grid-area: lo;
+  background-color: rgb(55, 55, 12);
+}
+.search {
+  grid-area: se;
+  background-color: rgb(234, 79, 255);
+}
+.project-menu {
+  grid-area: pm;
+}
+.menu {
+  grid-area: me;
+  background-color: rgb(172, 172, 229);
+}
+/* ============================================================================== */
+
 .sideMenu {
   grid-area: sb;
   background-color: blue;
   color: rgb(255, 255, 255);
 }
+/* ============================================================================== */
 
+/* Main container */
 .container {
   grid-area: mn;
   display: grid;
@@ -39,7 +67,7 @@ body {
 
   grid-template-areas:
     ". tp ."
-    "mf mf mf"
+    ". mf ."
     ". dp ."
     ". sf .";
   background-color: rgb(255, 255, 255);
@@ -48,33 +76,155 @@ body {
 .top-field {
   grid-area: tp;
   display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-row: 1fr;
+  grid-template-areas: ". vid .";
   place-content: center;
+  height: 20rem;
   background-color: rgb(4, 0, 255);
 }
+
+.video {
+  grid-area: vid;
+  width: 35.5rem;
+  height: 20rem;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ============================================================================== */
 .mid-field {
   grid-area: mf;
   display: grid;
   place-content: center;
+  height: 20rem;
   background-color: black;
 }
-.dropDown {
+.click-me-container {
   grid-area: dp;
   display: grid;
-  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "le-t mi-t ri-t"
+    "le-m mi-m ri-m"
+    "le-b mi-b ri-b"
+    ". mi-j .";
+
   background-color: rgb(211, 127, 0);
 }
+.click-me-option {
+  height: 15rem;
+  width: 100%;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+.left-top {
+  grid-area: le-t;
+  background-color: rgb(0, 133, 249);
+}
+
+.mid-top {
+  background-color: rgb(255, 140, 0);
+}
+.right-top {
+  grid-area: ri-t;
+  background-color: brown;
+}
+
+.left-mid {
+  grid-area: le-m;
+  background-color: blueviolet;
+}
+
+.mid-mid {
+  grid-area: mi-m;
+  background-color: red;
+}
+.right-mid {
+  grid-area: ri-m;
+  background-color: pink;
+}
+
+.left-bot {
+  grid-area: le-b;
+  background-color: yellow;
+}
+
+.mid-bot {
+  grid-area: mi-b;
+  background-color: aquamarine;
+}
+.right-bot {
+  grid-area: ri-b;
+  background-color: green;
+}
+.mid-jungel {
+  grid-area: mi-j;
+  background-color: grey;
+}
+
+/* ============================================================================== */
+
 .study-info {
   grid-area: sf;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   place-content: center;
   background-color: rgb(169, 0, 0);
 }
 
+.page-end {
+  height: 15rem;
+  width: 100%;
+}
+
+.top-left {
+  background-color: burlywood;
+}
+.top-right {
+  background-color: blueviolet;
+}
+
+.bot-left {
+  background-color: black;
+}
+
+.bot-right {
+  background-color: rgb(255, 0, 230);
+}
+/* ============================================================================== */
+
 .footer {
   grid-area: ft;
   background-color: aqua;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas:
+    "su su"
+    "ad li";
 }
+
+.subscribe {
+  grid-area: su;
+  background-color: red;
+}
+.adresPart {
+  grid-area: ad;
+  background-color: blue;
+}
+
+.links {
+  grid-area: li;
+  background-color: green;
+}
+/* ============================================================================== */
 
 .row-line {
   display: inline-block;
